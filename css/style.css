@@ -1,0 +1,124 @@
+body {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto;
+  gap: 2em; }
+  body header {
+    grid-area: header; }
+  body main {
+    grid-area: main;
+    display: grid;
+    grid-template-areas: "mainArticle mainArticle mainArticle" "mainImage1 mainImage2 mainImage3" "mainAside mainAside mainAside" "mainImage4 . mainImage5";
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 3.6em; }
+    body main .mainArticle {
+      grid-area: mainArticle;
+      justify-self: center; }
+    body main .mainImage1 {
+      grid-area: mainImage1;
+      justify-self: center; }
+    body main .mainImage2 {
+      grid-area: mainImage2; }
+    body main .mainImage3 {
+      grid-area: mainImage3;
+      justify-self: center; }
+    body main .mainAside {
+      grid-area: mainAside;
+      justify-self: center; }
+    body main .mainImage4 {
+      grid-area: mainImage4;
+      justify-self: center; }
+    body main .mainImage5 {
+      grid-area: mainImage5;
+      justify-self: center; }
+  body footer {
+    grid-area: footer; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-family: 'Manjari', sans-serif;
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+  color: whitesmoke;
+  background-color: black; }
+  body a {
+    text-decoration: none; }
+    body a:visited {
+      color: whitesmoke; }
+  body li {
+    list-style: none; }
+  body header {
+    background-image: url("../assets/images/mountain2.jpg"); }
+    body header .headerNav ul {
+      padding-top: 3em;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around; }
+    body header .headerTitle {
+      text-align: center;
+      padding: 5em 0;
+      font-size: 1.6em; }
+      body header .headerTitle iframe {
+        padding: 3em 0; }
+  body main .mainArticle {
+    text-align: center;
+    max-width: 400px;
+    padding-top: 2em; }
+    body main .mainArticle h3 {
+      line-height: 2em; }
+  body main .mainImage1 {
+    background-image: url("../assets/images/nf.jpg");
+    width: 300px;
+    height: 500px;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000; }
+  body main .mainImage2 {
+    background-image: url("../assets/images/ac.jpg");
+    width: 300px;
+    height: 500px;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000; }
+  body main .mainImage3 {
+    background-image: url("../assets/images/gs.jpg");
+    width: 300px;
+    height: 500px;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000; }
+  body main .mainAside {
+    text-align: center;
+    max-width: 400px;
+    padding-top: 12em; }
+    body main .mainAside h3 {
+      line-height: 2em; }
+  body main .mainImage4 {
+    text-align: center; }
+    body main .mainImage4 h4 {
+      line-height: 1.5em; }
+    body main .mainImage4 h3 {
+      line-height: 2.5em; }
+  body main .mainImage5 {
+    text-align: center; }
+    body main .mainImage5 h4 {
+      line-height: 1.5em; }
+    body main .mainImage5 h3 {
+      line-height: 2.5em; }
+  body footer {
+    background-image: url("../assets/images/mountain.jpg"); }
+    body footer .footerLink {
+      text-align: center;
+      margin: 1.6em 0; }
+    body footer .footerNav ul {
+      padding-top: 3em;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      margin-top: 35em;
+      padding-bottom: 1em; }
