@@ -8,6 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;500;700&display=swap" rel="stylesheet"> 
+  <!--AOS CSS-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!--CSS-->
   <link rel="stylesheet" href="./css/style.css">
   <title>Document</title>
@@ -23,9 +25,9 @@
         <li><a href="#">Search</a></li>
       </ul>
     </nav>
-    <div class="headerTitle">
+    <div class="headerTitle" data-aos="fade-up">
       <h1>The Great Mountain</h1>
-      <p>Wonder often. Wonder always.</p>
+      <p data-aos="fade-up" data-aos-delay="300">Wonder often. Wonder always.</p>
     </div>
     <div class="headerVideo">
       <iframe width="760" height="415" src="https://www.youtube.com/embed/zmKK7Wxe22k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -37,17 +39,17 @@
       <p>We seek to provide the most authentic content for athletes, adventurers, explorers and travelers around the world. Our long-term mission is to educate, inspire and enable all peoples to experience & protect wilderness.</p>
     </article>
     <div class="articleImages">
-      <figcaption class="mainImage1">
-        <p>Lorem ipsum.</p>
-        <p>Lorem.</p>
+      <figcaption class="mainImage1" data-aos="flip-left">
+        <p>Nærøyfjorden</p>
+        <p class="country">NORWAY</p>
       </figcaption>
-      <figcaption class="mainImage2">
-        <p>Lorem ipsum.</p>
-        <p>Lorem.</p>
+      <figcaption class="mainImage2" data-aos="flip-left">
+        <p>Antelope Canyon</p>
+        <p class="country">UNITED STATES</p>
       </figcaption>
-      <figcaption class="mainImage3">
-        <p>Lorem ipsum.</p>
-        <p>Lorem.</p>
+      <figcaption class="mainImage3" data-aos="flip-left">
+        <p>Grosslockner</p>
+        <p class="country">AUSTRIA</p>
       </figcaption>
     </div>
     <aside class="mainAside">
@@ -83,5 +85,11 @@
       </ul>
     </div>
   </footer>
+  <!--AOS JS-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!--AOS INIT-->
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

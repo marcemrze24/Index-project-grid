@@ -121,6 +121,8 @@ body {
           position: inherit;
           top: 80%;
           text-shadow: 1px 1px 2px #000000; }
+        body main .articleImages figcaption .country {
+          font-size: 0.7em; }
       body main .articleImages .mainImage1 {
         background-image: url("../assets/images/nf.jpg");
         position: relative; }
