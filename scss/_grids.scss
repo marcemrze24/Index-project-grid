@@ -12,42 +12,6 @@ body {
   }
   main {
     grid-area: main;
-    display: grid;
-    grid-template-areas: 
-    "mainArticle mainArticle mainArticle"
-    "mainImage1 mainImage2 mainImage3"
-    "mainAside mainAside mainAside"
-    "mainImage4 . mainImage5";
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-    gap: 3.6em;
-    .mainArticle {
-      grid-area: mainArticle;
-      justify-self: center;
-    }
-    .mainImage1 {
-      grid-area: mainImage1;
-      justify-self: center;
-    }
-    .mainImage2 {
-      grid-area: mainImage2;
-    }
-    .mainImage3 {
-      grid-area: mainImage3;
-      justify-self: center;
-    }
-    .mainAside {
-      grid-area: mainAside;
-      justify-self: center;
-    }
-    .mainImage4 {
-      grid-area: mainImage4;
-      justify-self: center;
-    }
-    .mainImage5 {
-      grid-area: mainImage5;
-      justify-self: center;
-    }
   }
   footer {
     grid-area: footer;
