@@ -9,11 +9,54 @@ body {
   gap: 2em;
   header {
     grid-area: header;
+    @include flex-column-center;
+    align-items: stretch;
+    .headerNav {
+      ul {
+        @include flex-row-center;
+        justify-content: space-around;
+      }
+    }
+    .headerTitle {
+      @include flex-column-center;
+    }
+    .headerVideo {
+      @include flex-row-center
+    }
   }
   main {
     grid-area: main;
+    article {
+      @include flex-column-center;
+    }
+    .articleImages {
+      @include flex-row-center;
+      justify-content: space-around;
+    }
+    aside {
+      @include flex-column-center
+    }
+    .asideImages {
+      @include flex-row-center;
+      justify-content: space-around;
+      .mainImage4 {
+        @include flex-column-center
+      }
+      .mainImage5 {
+        @include flex-column-center
+      }
+    }
   }
   footer {
     grid-area: footer;
+    .footerLink {
+      text-align: center;
+    }
+    .footerNav {
+      ul {
+        @include flex-row-center;
+        justify-content: space-around;
+      }
+    }
   }
 }

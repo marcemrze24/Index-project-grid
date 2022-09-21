@@ -5,17 +5,157 @@ body {
   grid-template-columns: auto;
   gap: 2em; }
   body header {
-    grid-area: header; }
+    grid-area: header;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    align-items: stretch; }
+    body header .headerNav ul {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      justify-content: space-around; }
+    body header .headerTitle {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center; }
+    body header .headerVideo {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center; }
   body main {
     grid-area: main; }
+    body main article {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center; }
+    body main .articleImages {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      justify-content: space-around; }
+    body main aside {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center; }
+    body main .asideImages {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      justify-content: space-around; }
+      body main .asideImages .mainImage4 {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center; }
+      body main .asideImages .mainImage5 {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center; }
   body footer {
     grid-area: footer; }
+    body footer .footerLink {
+      text-align: center; }
+    body footer .footerNav ul {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      justify-content: space-around; }
 
 * {
   padding: 0;
   margin: 0; }
 
 body {
-  font-family: 'Manjari', sans-serif;
-  color: whitesmoke;
-  background-color: black; }
+  font-family: 'Domine', serif;
+  color: #f3f8fa;
+  background-color: #0b0b0d; }
+  body a {
+    text-decoration: none; }
+    body a:visited {
+      color: #7ab4cc; }
+  body ul {
+    list-style: none; }
+  body header {
+    background-image: url("../assets/images/blue-mountains-wallpaper.jpg");
+    height: 1080px;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; }
+    body header .headerNav {
+      position: inherit;
+      top: 2%;
+      text-shadow: 1px 1px 2px #000000; }
+    body header .headerTitle {
+      font-size: 1.6em;
+      position: inherit;
+      top: 18%; }
+      body header .headerTitle h1 {
+        font-size: 3.8em;
+        color: #15356c; }
+      body header .headerTitle p {
+        color: #15356c;
+        font-size: 0.7em; }
+    body header .headerVideo {
+      position: inherit;
+      top: 25%; }
+  body main {
+    text-align: center; }
+    body main article, body main aside {
+      margin: 6.5em 30%; }
+      body main article h3, body main aside h3 {
+        font-size: 1.6em;
+        height: 2.5em; }
+      body main article h2, body main aside h2 {
+        font-size: 1.6em;
+        height: 2.5em; }
+      body main article p, body main aside p {
+        line-height: 1.5em; }
+    body main .articleImages {
+      margin: 0 15%; }
+      body main .articleImages figcaption {
+        height: 500px;
+        width: 300px; }
+        body main .articleImages figcaption p {
+          position: inherit;
+          top: 80%;
+          text-shadow: 1px 1px 2px #000000; }
+      body main .articleImages .mainImage1 {
+        background-image: url("../assets/images/nf.jpg");
+        position: relative; }
+      body main .articleImages .mainImage2 {
+        background-image: url("../assets/images/ac.jpg");
+        position: relative; }
+      body main .articleImages .mainImage3 {
+        background-image: url("../assets/images/gs.jpg");
+        position: relative; }
+    body main .asideImages h5 {
+      height: 1.8em;
+      margin-top: 1.6em; }
+    body main .asideImages h4 {
+      font-size: 1.4em;
+      height: 2.2em; }
+    body main .asideImages p {
+      width: 500px;
+      line-height: 1.5em;
+      font-size: 0.7em; }
+  body footer {
+    background-image: url("../assets/images/hammersley-lake-katmai-range-ak-wallpaper.jpg");
+    height: 500px;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; }
+    body footer .footerLink {
+      position: inherit;
+      top: 2%; }
+      body footer .footerLink a:visited {
+        color: black; }
+    body footer .footerNav {
+      position: inherit;
+      top: 90%;
+      text-shadow: 1px 1px 2px #000000; }
+      body footer .footerNav a:visited {
+        color: #15356c; }

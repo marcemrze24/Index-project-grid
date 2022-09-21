@@ -1,9 +1,136 @@
+//RESET//
 * {
   padding: 0;
   margin: 0;
 }
 body {
-  font-family: 'Manjari', sans-serif;
-  color: whitesmoke;
-  background-color: black;
+  font-family: 'Domine', serif;
+  color: map-get($colors, fontWhite);
+  background-color: map-get($colors, backgroundBlack);
+  //FIXES//
+  a {
+    text-decoration: none;
+    &:visited {
+      color: map-get($colors, lightBlue);
+    }
+  }
+  ul {
+    list-style: none;
+  }
+ //BODYSTYLE//
+  header {
+    background-image: url("../assets/images/blue-mountains-wallpaper.jpg");
+    height: 1080px;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    .headerNav {
+      position: inherit;
+      top: 2%;
+      text-shadow: 1px 1px 2px #000000;
+    }
+    .headerTitle {
+      font-size: 1.6em;
+      position: inherit;
+      top: 18%;
+      h1 {
+        font-size: 3.8em;
+        color: map-get($colors, strongBlue);
+      }
+      p {
+        color: map-get($colors, strongBlue);
+        font-size: 0.7em;
+      }
+    }
+    .headerVideo {
+      position: inherit;
+      top: 25%;
+    }
+  }
+  main {
+    text-align: center;
+    article, aside {
+      margin: 6.5em 30%;
+      h3 {
+        font-size: 1.6em;
+        height: 2.5em;
+      }
+      h2 {
+        font-size: 1.6em;
+        height: 2.5em;
+      }
+      p {
+        line-height: 1.5em;
+      }
+    }
+    .articleImages {
+      margin: 0 15%;
+      figcaption {
+        height: 500px;
+        width: 300px;
+        p {
+          position: inherit;
+          top: 80%;
+          text-shadow: 1px 1px 2px #000000;
+        }
+      }
+      .mainImage1 {
+        background-image: url("../assets/images/nf.jpg");
+        position: relative;
+      }
+      .mainImage2 {
+        background-image: url("../assets/images/ac.jpg");
+        position: relative;
+      }
+      .mainImage3 {
+        background-image: url("../assets/images/gs.jpg");
+        position: relative;
+      }
+    }
+    .asideImages {
+      h5 {
+        height: 1.8em;
+        margin-top: 1.6em;
+      }
+      h4 {
+        font-size: 1.4em;
+        height: 2.2em;
+      }
+      p {
+        width: 500px;
+        line-height: 1.5em;
+        font-size: 0.7em;
+      }
+    }
+  }
+  footer {
+    background-image: url("../assets/images/hammersley-lake-katmai-range-ak-wallpaper.jpg");
+    height: 500px;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    .footerLink {
+      position: inherit;
+      top: 2%;
+      a {
+        &:visited {
+          color: black;
+        }
+      }
+    }
+    .footerNav {
+      position: inherit;
+      top: 90%;
+      text-shadow: 1px 1px 2px #000000;
+      a {
+        &:visited {
+          color: map-get($colors, strongBlue);
+        }
+      }
+    }
+  }
 }
