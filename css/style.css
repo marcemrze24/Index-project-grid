@@ -161,3 +161,84 @@ body {
       text-shadow: 1px 1px 2px #000000; }
       body footer .footerNav a:visited {
         color: #15356c; }
+
+@media screen and (max-width: 768px) {
+  body {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-rows: 33% 33% 33%;
+    grid-template-columns: 100%;
+    gap: 2em; }
+    body header {
+      grid-area: header;
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      align-items: stretch;
+      height: 75vh;
+      overflow: hidden; }
+      body header .headerNav ul {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        align-items: center;
+        line-height: 1.6em; }
+      body header .headerTitle {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        text-align: center;
+        top: 15%; }
+        body header .headerTitle h1 {
+          font-size: 1.6em; }
+      body header .headerVideo {
+        display: none; }
+    body main {
+      grid-area: main; }
+      body main article {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center; }
+      body main .articleImages {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        justify-content: space-around; }
+        body main .articleImages figcaption {
+          margin: 2em 0; }
+      body main aside {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center; }
+      body main .asideImages {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        justify-content: space-around; }
+        body main .asideImages img {
+          width: 400px; }
+        body main .asideImages .mainImage4 {
+          display: flex;
+          flex-flow: column wrap;
+          align-items: center; }
+          body main .asideImages .mainImage4 p {
+            width: 350px;
+            margin-bottom: 3em; }
+        body main .asideImages .mainImage5 {
+          display: flex;
+          flex-flow: column wrap;
+          align-items: center; }
+          body main .asideImages .mainImage5 p {
+            width: 350px; }
+    body footer {
+      grid-area: footer; }
+      body footer .footerLink {
+        text-align: center; }
+      body footer .footerNav {
+        top: 70%; }
+        body footer .footerNav ul {
+          display: flex;
+          flex-flow: column wrap;
+          align-items: center;
+          align-content: center;
+          line-height: 1.5em; } }
